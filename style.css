@@ -10,6 +10,10 @@ body {
     color: #e5e7eb;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 
 /* NAVBAR */
 .navbar {
@@ -73,6 +77,25 @@ body {
     border-radius: 6px;
     text-decoration: none;
 }
+/*Experience*/
+.experience-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.experience-card{
+    background: rgba(255,255,255,0.03);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #00bcd4;
+}
+
+.experience-card h3{
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
 
 /* SECTIONS */
 .about-section {
@@ -580,7 +603,8 @@ footer {
     .project-item {
         padding: 20px;
     }
-
+     /* gALLEY  */
+     
     /* CONTACT */
     #contact {
         padding: 100px 20px 60px;
