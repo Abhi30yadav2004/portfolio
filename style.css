@@ -615,3 +615,11 @@ footer {
         gap: 20px;
     }
 }
+/* FIX: Always show left blue border */
+.project-item {
+    border-left: 5px solid #38bdf8 !important;
+}
+.project-item .btn {
+    margin-top: 15px;
+    display: inline-block;
+}
