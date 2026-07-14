@@ -476,11 +476,31 @@ ul { list-style: none; }
 .timeline-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .timeline-card p {
     color: var(--text-muted);
     font-size: 15px;
     margin-bottom: 6px;
+}
+.timeline-badge {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--blue);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+.timeline-date {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 12px;
 }
 
 /* =========================================================
