@@ -14,16 +14,30 @@ if (navToggle && navLinks) {
 // =========================================================
 // SMOOTH SCROLL + CLOSE MOBILE MENU ON LINK CLICK
 // =========================================================
-document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", e => {
-        const target = document.querySelector(link.getAttribute("href"));
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: "smooth" });
+        const href = link.getAttribute("href");
+        if (href && href.startsWith("#")) {
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth" });
+            }
         }
-        navLinks.classList.remove("open");
+        navLinks?.classList.remove("open");
         navToggle?.setAttribute("aria-expanded", "false");
     });
+});
+
+// Close the mobile menu with the Escape key
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && navLinks?.classList.contains("open")) {
+        navLinks.classList.remove("open");
+        navToggle?.setAttribute("aria-expanded", "false");
+        navToggle?.focus();
+    }
 });
 
 // =========================================================
@@ -53,13 +67,19 @@ onScroll();
 // HERO TYPING EFFECT
 // =========================================================
 const typedTextEl = document.getElementById("typedText");
-const words = ["Java", "Python", "MySQL", "Power BI", "IoT"];
+const words = ["Python", "SQL", "ETL pipelines", "Power BI", "Java"];
 let wordIndex = 0;
 let charIndex = 0;
 let deleting = false;
 
 function typeLoop() {
     if (!typedTextEl) return;
+
+    // Respect reduced-motion: show the first skill statically, no typing loop
+    if (prefersReducedMotion) {
+        typedTextEl.textContent = words[0];
+        return;
+    }
 
     const current = words[wordIndex];
 
@@ -102,27 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
     revealElements(); // run once
     window.addEventListener("scroll", revealElements);
 });
-
-// =========================================================
-// SKILL BAR ANIMATION (runs once per bar, when visible)
-// =========================================================
-const skillBars = document.querySelectorAll(".skill-bar-fill");
-
-if ("IntersectionObserver" in window && skillBars.length) {
-    const barObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("animate");
-                barObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.4 });
-
-    skillBars.forEach(bar => barObserver.observe(bar));
-} else {
-    // Fallback: just show full bars
-    skillBars.forEach(bar => bar.classList.add("animate"));
-}
 
 // =========================================================
 // BACK TO TOP BUTTON

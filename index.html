@@ -3,8 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhishek Yadav | Software & Data Engineer</title>
-<meta name="description" content="Abhishek Yadav — Computer Science undergraduate specializing in Java, backend development, data analytics and IoT.">
+<script>document.documentElement.classList.add("js");</script>
+
+<title>Abhishek Yadav | Data Engineer | Data Analyst | Java Developer</title>
+<meta name="description" content="B.Tech Computer Science graduate with hands-on ETL, SQL, data warehousing, Power BI, Python and Java experience. Open to Data Analyst, Data Engineer and Backend Developer roles.">
+<meta name="author" content="Abhishek Yadav">
+<meta name="theme-color" content="#0b1120">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Open Graph / social sharing -->
+<!-- NOTE: once the site is live, change og:image / twitter:image to absolute URLs
+     (e.g. https://your-domain/assets/og-image.jpg) and add og:url. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abhishek Yadav | Data Engineer | Data Analyst | Java Developer">
+<meta property="og:description" content="B.Tech Computer Science graduate with hands-on ETL, SQL, data warehousing, Power BI, Python and Java experience. Open to Data Analyst, Data Engineer and Backend Developer roles.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Abhishek Yadav — Data Engineer, Data Analyst, Java and SQL Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abhishek Yadav | Data Engineer | Data Analyst | Java Developer">
+<meta name="twitter:description" content="B.Tech Computer Science graduate with hands-on ETL, SQL, data warehousing, Power BI, Python and Java experience.">
+<meta name="twitter:image" content="assets/og-image.jpg">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abhishek Yadav",
+  "jobTitle": "Data Engineer / Data Analyst / Java Developer",
+  "description": "B.Tech Computer Science graduate with hands-on experience in ETL, SQL, data warehousing, Power BI, Python and Java backend development.",
+  "email": "mailto:abhiyadav20004@gmail.com",
+  "knowsAbout": ["Data Analytics", "Data Engineering", "ETL", "SQL", "Python", "Power BI", "Data Warehousing", "Java"],
+  "sameAs": [
+    "https://www.linkedin.com/in/abhishek-yadav-649b15261",
+    "https://github.com/Abhi30yadav2004",
+    "https://leetcode.com/u/Abhishek1_yadav30/"
+  ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +57,14 @@
 <body>
 
 <!-- Skip link for accessibility -->
-<a class="skip-link" href="#home">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- NAVBAR -->
 <header>
 <nav class="navbar" aria-label="Primary">
     <a href="#home" class="logo">Abhishek<span>.</span></a>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
     </button>
 
@@ -30,76 +72,96 @@
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#training" class="nav-link">Training</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li class="nav-cta"><a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a></li>
+        <li class="nav-cta">
+            <!-- <a href="ResumeAYY.pdf" class="btn btn-primary btn-sm" download>
+                <i class="fa-solid fa-download" aria-hidden="true"></i> Resume
+            </a> -->
+        </li>
     </ul>
 </nav>
 </header>
+
+<main id="main">
 
 <!-- HOME -->
 <section id="home" class="home">
     <div class="home-bg" aria-hidden="true"></div>
     <div class="home-content">
-        <p class="eyebrow">Computer Science Graduate · B.Tech (IoT)</p>
-        <h1 class="hero-title">Hi, I'm Abhishek Yadav</h1>
+        <p class="eyebrow">B.Tech Computer Science (IoT) Graduate</p>
+        <h1 class="hero-title">Abhishek Yadav</h1>
+        <p class="hero-role">Data Engineer | Data Analyst | Java &amp; SQL Developer</p>
         <p class="hero-typing">
-            I build with <span id="typedText" class="typed-text">Java</span><span class="cursor" aria-hidden="true">|</span>
+            Hands-on with <span id="typedText" class="typed-text">Python</span><span class="cursor" aria-hidden="true">|</span>
         </p>
         <p class="hero-desc">
-            Backend-focused developer with a strong foundation in databases and data analytics —
-            turning raw data and ideas into reliable, well-structured software.
+            Computer Science graduate with practical experience in data analytics, ETL, data warehousing,
+            SQL, Power BI, Python and Java/backend development. Looking for entry-level
+            Data Analyst, Data Engineer and Backend Developer roles.
         </p>
 
         <div class="home-buttons">
             <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
-            <!-- <a href="ResumeAYY.pdf" class="btn btn-ghost" download>
-                <i class="fa-solid fa-download"></i> Resume
+            <!-- <a href="ResumeAYY.pdf" class="btn btn-outline" download>
+                <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
             </a> -->
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
         </div>
 
         <div class="hero-socials">
             <a href="mailto:abhiyadav20004@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/abhishek-yadav-649b15261" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.github.com/Abhi30yadav2004" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://leetcode.com/u/Abhishek1_yadav30/" target="_blank" rel="noopener" aria-label="LeetCode" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-yadav-649b15261" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Abhi30yadav2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com/u/Abhishek1_yadav30/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" title="LeetCode"><i class="fa-solid fa-code"></i></a>
         </div>
     </div>
-
-    <a href="#about" class="scroll-cue" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></a>
 </section>
 
 
 <!-- ABOUT -->
 <section id="about" class="section about-section reveal">
     <p class="eyebrow center">About</p>
-    <h2 class="section-title">Who I Am</h2>
+    <h2 class="section-title">About Me</h2>
 
     <div class="about-container">
 
         <div class="about-image">
             <div class="about-image-frame">
-                <img src="Yadav pic 1.jpg" alt="Portrait of Abhishek Yadav" loading="lazy">
+                <div class="about-image">
+    <div class="about-image-frame">
+        <img
+            src="Yadav pic 1.jpg"
+            width="520"
+            height="520"
+            alt="Portrait of Abhishek Yadav"
+            loading="lazy"
+            decoding="async">
+    </div>
+</div>
             </div>
         </div>
 
         <div class="about-content">
-            <h3>Computer Science Undergraduate | Java · Backend · Data</h3>
+            <h3>Computer Science graduate with data analytics, data engineering and Java skills</h3>
 
             <p>
-                I am a B.Tech Computer Science (IoT) student with Java as my core programming
-                language and a strong foundation in SQL databases and backend development.
-                I have experience in data analysis using MySQL, Excel, and Power BI, along with
-                exposure to IoT systems and enterprise applications through industrial training.
+                I'm a B.Tech Computer Science (IoT) graduate with hands-on experience in data analytics
+                and data engineering from the Infosys Springboard internship. There I worked on ETL pipelines,
+                data transformation, a star-schema data warehouse, SQL analysis and Power BI dashboards.
             </p>
 
             <p>
-                I have also delivered a full-stack project, giving me a clear understanding
-                of end-to-end software development — from database design to shipping a working product.
+                Java is my core programming language, and I build database-driven backend applications
+                with SQL and MySQL. I also completed industrial training at BHEL, Bhopal, and have solved
+                150+ problems on LeetCode, which keeps my problem-solving and SQL practice sharp.
+            </p>
+
+            <p>
+                I'm looking for entry-level Data Analyst, Data Engineer, Analytics Engineer or Backend
+                Developer roles where I can keep building on this foundation.
             </p>
 
             <div class="about-stats">
@@ -108,15 +170,50 @@
                     <span>LeetCode Problems</span>
                 </div>
                 <div class="stat-box">
-                    <h4>4</h4>
-                    <span>Major Projects</span>
+                    <h4>6</h4>
+                    <span>Projects</span>
                 </div>
                 <div class="stat-box">
-                    <h4>1</h4>
-                    <span>Industrial Training</span>
+                    <h4>2</h4>
+                    <span>Internship &amp; Industrial Training</span>
                 </div>
             </div>
         </div>
+
+    </div>
+</section>
+
+
+<!-- WHAT I DO -->
+<section id="what-i-do" class="section soft reveal">
+    <p class="eyebrow center">What I Do</p>
+    <h2 class="section-title">Professional Capabilities</h2>
+
+    <div class="capability-grid">
+
+        <article class="capability-card">
+            <div class="capability-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+            <h3>Data Engineering</h3>
+            <p>Build ETL workflows, transform raw data, and prepare structured datasets for analytics.</p>
+        </article>
+
+        <article class="capability-card">
+            <div class="capability-icon"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div>
+            <h3>Data Analytics</h3>
+            <p>Use SQL, Python and analytical techniques to explore data and identify useful patterns.</p>
+        </article>
+
+        <article class="capability-card">
+            <div class="capability-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
+            <h3>Business Intelligence</h3>
+            <p>Create Power BI dashboards, KPIs and data visualizations that communicate insights clearly.</p>
+        </article>
+
+        <article class="capability-card">
+            <div class="capability-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+            <h3>Backend Development</h3>
+            <p>Build Java/Spring Boot applications and work with REST APIs and relational databases.</p>
+        </article>
 
     </div>
 </section>
@@ -125,75 +222,262 @@
 <!-- EXPERIENCE -->
 <section id="experience" class="section reveal">
     <p class="eyebrow center">Experience</p>
-    <h2 class="section-title">Where I've Worked</h2>
+    <h2 class="section-title">Experience &amp; Training</h2>
 
     <div class="timeline">
 
+        <!-- Infosys Springboard — featured -->
         <div class="timeline-item">
-            <div class="timeline-marker"><i class="fa-solid fa-chart-line"></i></div>
-            <div class="timeline-card">
-                <h3>Data Analyst Intern — Infosys <span class="timeline-badge">Current</span></h3>
+            <div class="timeline-marker"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+            <div class="timeline-card timeline-card-featured">
+                <h3>Data Analyst Intern <span class="timeline-badge">Current</span></h3>
+                <p class="exp-org">Infosys Springboard</p>
                 <p class="timeline-date">June 2026 – Present</p>
-                <p>
-                    Working on <strong>Urban Pulse</strong>, a smart city mobility intelligence
-                    platform that unifies transit, ride-hailing, bike-share, weather, and
-                    demographic data into a single analytics environment for city planners
-                    and transport agencies.
+
+                <div class="exp-focus">
+                    <span class="exp-focus-label">Focus</span>
+                    <div class="tech-badges">
+                        <span>Data Analytics</span><span>Data Engineering</span><span>ETL</span><span>Business Intelligence</span>
+                    </div>
+                </div>
+
+                <p class="exp-project">
+                    Internship project: <a href="#urban-pulse"><strong>Urban Pulse</strong> — Smart Urban Mobility &amp; Traffic Intelligence Platform</a>,
+                    which brings multi-domain mobility data into one analytics environment.
                 </p>
-                <p>
-                    Built automated ETL pipelines and a star-schema data model to ingest,
-                    cleanse, and standardize multimodal mobility datasets from multiple
-                    public sources.
-                </p>
-                <p>
-                    Developed geospatial analytics (demand heatmaps, flow maps, accessibility
-                    maps) and transit performance dashboards covering reliability, schedule
-                    adherence, and congestion monitoring.
-                </p>
-                <p>
-                    Designed a Mobility Access Index and City Mobility Health Score to
-                    support equity analysis, forecasting, anomaly detection, and executive
-                    reporting.
-                </p>
+
+                <ul class="bullet-list">
+                    <li>Extracted, cleaned and standardized mobility datasets from multiple public sources.</li>
+                    <li>Built ETL workflows to transform raw data into analysis-ready tables.</li>
+                    <li>Designed a star-schema data model and prepared the data warehouse layer.</li>
+                    <li>Wrote SQL queries to explore and analyze the integrated data.</li>
+                    <li>Developed Power BI dashboards with DAX measures and KPIs for ride-hailing demand, demographics and mobility access.</li>
+                    <li>Created the Mobility Access Index (MAI) and a City Mobility Health Score to support equity analysis and reporting.</li>
+                    <li>Collaborated with the internship team and presented analysis and dashboards.</li>
+                </ul>
+
+                <p class="exp-note">Completed in an internship project environment using public datasets.</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-marker"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="timeline-marker"><i class="fa-solid fa-industry" aria-hidden="true"></i></div>
             <div class="timeline-card">
-                <h3>Campus Ambassador — Model United Nations (MUN)</h3>
+                <h3>Industrial Trainee — BHEL, Bhopal</h3>
                 <p>
-                    Represented the Model United Nations program on campus, promoted participation,
-                    coordinated student engagement activities, and supported event organization.
+                    Completed industrial training at Bharat Heavy Electricals Limited, gaining exposure to
+                    enterprise systems and database-driven applications used in manufacturing, inventory
+                    and operations. It strengthened my interest in backend development and databases.
                 </p>
-                <p>Used Excel to track participation and feedback data to improve engagement.</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-marker"><i class="fa-solid fa-bullhorn"></i></div>
-            <div class="timeline-card">
-                <h3>Marketing &amp; PR Team Member — TechVilla Coding Club</h3>
-                <p>Managed promotional campaigns, social media outreach, and event communication.</p>
-                <p>Increased student engagement and analyzed participation trends.</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-marker"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="timeline-marker"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
             <div class="timeline-card">
                 <h3>Freelance Data Analyst / Developer</h3>
                 <p>
-                    Worked on freelance projects involving data analysis, dashboard development,
-                    and basic web solutions for clients.
-                </p>
-                <p>
-                    Analyzed datasets using Excel, SQL, and Python, and created interactive
-                    dashboards in Power BI to provide actionable insights.
+                    Worked on freelance projects involving data analysis, dashboard development and basic
+                    web solutions. Analyzed datasets with Excel, SQL and Python and built Power BI dashboards.
                 </p>
             </div>
         </div>
 
+        <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i></div>
+            <div class="timeline-card">
+                <h3>Campus Ambassador — Model United Nations (MUN)</h3>
+                <p>
+                    Represented the MUN program on campus, promoted participation and coordinated
+                    engagement activities. Used Excel to track participation and feedback data.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+            <div class="timeline-card">
+                <h3>Marketing &amp; PR Team Member — TechVilla Coding Club</h3>
+                <p>Managed promotional campaigns, social media outreach and event communication, and analyzed participation trends.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section soft reveal">
+    <p class="eyebrow center">Projects</p>
+    <h2 class="section-title">Selected Projects</h2>
+
+    <div class="project-grid">
+
+        <!-- 1. URBAN PULSE (featured) -->
+        <article class="project-card featured" id="urban-pulse">
+            <div class="project-media"><i class="fa-solid fa-city" aria-hidden="true"></i></div>
+            <div class="project-body">
+                <p class="project-kicker">Featured project · Infosys Springboard internship</p>
+                <h3>Urban Pulse — Smart Urban Mobility &amp; Traffic Intelligence Platform</h3>
+
+                <!-- Dashboard screenshots: add images here when available, e.g.
+                <figure class="project-shot">
+                    <img src="assets/urban-pulse-dashboard.webp" width="1200" height="675"
+                         alt="Urban Pulse Power BI dashboard — Ride-Hailing & Demand Intelligence" loading="lazy" decoding="async">
+                </figure> -->
+
+                <div class="project-split">
+                    <div>
+                        <h4 class="project-label">Problem</h4>
+                        <p>Urban mobility data comes from multiple domains and needs to be integrated into a common analytical environment.</p>
+
+                        <h4 class="project-label">My role</h4>
+                        <p>Data Engineer / Data Analytics contributor.</p>
+
+                        <h4 class="project-label">Data domains</h4>
+                        <div class="tech-badges">
+                            <span>Public transit</span><span>Ride-hailing</span><span>Bike sharing</span><span>Traffic</span><span>Weather</span><span>Demographics</span>
+                        </div>
+
+                        <h4 class="project-label">Dashboard areas</h4>
+                        <ul class="bullet-list">
+                            <li>Ride-Hailing &amp; Demand Intelligence</li>
+                            <li>Demographic Analysis</li>
+                            <li>Mobility Access Index</li>
+                            <li>Urban mobility KPIs</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="project-label">Work performed</h4>
+                        <ul class="bullet-list bullet-list-cols">
+                            <li>Data extraction</li>
+                            <li>Data cleaning</li>
+                            <li>Data transformation</li>
+                            <li>ETL pipeline development</li>
+                            <li>Data warehouse preparation</li>
+                            <li>Star-schema data modeling</li>
+                            <li>SQL analysis</li>
+                            <li>Power BI dashboard development</li>
+                            <li>KPI creation</li>
+                            <li>Mobility Access Index (MAI) analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="project-label">Technologies</h4>
+                <div class="tech-badges">
+                    <span>Python</span><span>SQL</span><span>ETL</span><span>Data Warehousing</span><span>Power BI</span><span>DAX</span><span>Data Modeling</span>
+                </div>
+
+                <!-- Add when available:
+                <div class="project-links">
+                    <a href="LIVE_DEMO_URL" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a href="GITHUB_REPO_URL" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div> -->
+            </div>
+        </article>
+
+        <!-- 2. FRAUD -->
+        <article class="project-card">
+            <div class="project-media"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <div class="project-body">
+                <h3>Financial Fraud Risk Detection Analytics</h3>
+                <p class="project-summary">Detects potentially fraudulent transactions by analyzing transaction patterns.</p>
+                <h4 class="project-label">Key work</h4>
+                <ul class="bullet-list">
+                    <li>Built a fraud detection model with Logistic Regression in Python.</li>
+                    <li>Reached ~99.6% accuracy, detecting 164 fraud cases.</li>
+                    <li>Visualized transaction patterns and risk in Power BI.</li>
+                </ul>
+                <div class="tech-badges">
+                    <span>Python</span><span>Machine Learning</span><span>Power BI</span><span>MySQL</span>
+                </div>
+                <!-- <div class="project-links"><a href="GITHUB_REPO_URL" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div> -->
+            </div>
+        </article>
+
+        <!-- 3. SUPERSTORE -->
+        <article class="project-card">
+            <div class="project-media"><i class="fa-solid fa-store" aria-hidden="true"></i></div>
+            <div class="project-body">
+                <h3>Superstore Sales Analysis</h3>
+                <p class="project-summary">Turns raw sales data into business insights through SQL and dashboards.</p>
+                <h4 class="project-label">Key work</h4>
+                <ul class="bullet-list">
+                    <li>Cleaned and prepared the sales dataset.</li>
+                    <li>Wrote SQL queries to analyze sales performance.</li>
+                    <li>Built interactive Power BI dashboards for business insights.</li>
+                </ul>
+                <div class="tech-badges">
+                    <span>MySQL</span><span>SQL</span><span>Power BI</span><span>Excel</span>
+                </div>
+                <!-- <div class="project-links"><a href="GITHUB_REPO_URL" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div> -->
+            </div>
+        </article>
+
+        <!-- 4. REAL ESTATE -->
+        <article class="project-card">
+            <div class="project-media"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></div>
+            <div class="project-body">
+                <h3>Real Estate Data Analytics</h3>
+                <p class="project-summary">Identifies the factors that influence house prices.</p>
+                <h4 class="project-label">Key work</h4>
+                <ul class="bullet-list">
+                    <li>Cleaned housing data and calculated KPIs.</li>
+                    <li>Ran exploratory analysis in Python, including filters such as area &gt; 2000 sqft.</li>
+                    <li>Built a Power BI dashboard on price trends by area, bedrooms, parking and furnishing.</li>
+                </ul>
+                <div class="tech-badges">
+                    <span>Python</span><span>Power BI</span><span>Excel</span>
+                </div>
+                <!-- <div class="project-links"><a href="GITHUB_REPO_URL" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div> -->
+            </div>
+        </article>
+
+        <!-- 5. A CUBE ERP -->
+        <article class="project-card">
+            <div class="project-media"><i class="fa-solid fa-cubes" aria-hidden="true"></i></div>
+            <div class="project-body">
+                <h3>A Cube ERP — AI-Based ERP System</h3>
+                <p class="project-summary">Modular ERP for HR, Finance, Inventory and Project Management with Gemini AI features.</p>
+                <h4 class="project-label">Key work</h4>
+                <ul class="bullet-list">
+                    <li>Built modules for HR, Finance, Inventory and Project Management.</li>
+                    <li>Integrated Google Gemini AI for job descriptions, offer letters, financial insights and project plans.</li>
+                    <li>Developed serverless APIs and real-time dashboards.</li>
+                </ul>
+                <div class="tech-badges">
+                    <span>React</span><span>TypeScript</span><span>Node.js</span><span>Firebase</span><span>Gemini AI</span>
+                </div>
+                <!-- <div class="project-links"><a href="GITHUB_REPO_URL" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div> -->
+            </div>
+        </article>
+
+        <!-- 6. ROBOCAR -->
+        <article class="project-card">
+            <div class="project-media"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+            <div class="project-body">
+                <h3>RoboCar</h3>
+                <p class="project-summary">Bluetooth-controlled robotic car built on an ESP32.</p>
+                <h4 class="project-label">Key work</h4>
+                <ul class="bullet-list">
+                    <li>Integrated a motor driver with the ESP32.</li>
+                    <li>Implemented real-time movement control from a mobile app over Bluetooth.</li>
+                </ul>
+                <div class="tech-badges">
+                    <span>ESP32</span><span>Bluetooth</span><span>IoT</span>
+                </div>
+                <!-- <div class="project-links"><a href="GITHUB_REPO_URL" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div> -->
+            </div>
+        </article>
+
+    </div>
+
+    <div class="projects-more">
+        <a href="https://github.com/Abhi30yadav2004" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> View all repositories on GitHub
+        </a>
     </div>
 </section>
 
@@ -201,101 +485,70 @@
 <!-- SKILLS -->
 <section id="skills" class="section dark reveal">
     <p class="eyebrow center light">Skills</p>
-    <h2 class="section-title light">What I Work With</h2>
+    <h2 class="section-title light">Technical Skills</h2>
 
     <div class="skill-groups">
 
         <div class="skill-card">
             <div class="skill-head">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
                 <h3>Programming</h3>
             </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>Java</span><span>90%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:90%"></div></div>
-            </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>Python</span><span>80%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:80%"></div></div>
-            </div>
+            <ul class="skill-tags">
+                <li>Java</li><li>Python</li><li>SQL</li>
+            </ul>
         </div>
 
         <div class="skill-card">
             <div class="skill-head">
-                <i class="fa-solid fa-database"></i>
-                <h3>Databases</h3>
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                <h3>Data &amp; Analytics</h3>
             </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>MySQL</span><span>85%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:85%"></div></div>
-            </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>JDBC</span><span>75%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:75%"></div></div>
-            </div>
+            <ul class="skill-tags">
+                <li>Pandas</li><li>NumPy</li><li>Power BI</li><li>Excel</li><li>DAX</li>
+            </ul>
         </div>
 
         <div class="skill-card">
             <div class="skill-head">
-                <i class="fa-solid fa-chart-line"></i>
-                <h3>Data &amp; Tools</h3>
+                <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                <h3>Data Engineering</h3>
             </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>Power BI</span><span>85%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:85%"></div></div>
-            </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>Excel</span><span>90%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:90%"></div></div>
-            </div>
+            <ul class="skill-tags">
+                <li>ETL</li><li>Data Cleaning</li><li>Data Transformation</li><li>Data Warehousing</li><li>Star Schema</li><li>Data Modeling</li>
+            </ul>
         </div>
 
         <div class="skill-card">
             <div class="skill-head">
-                <i class="fa-solid fa-microchip"></i>
-                <h3>IoT</h3>
+                <i class="fa-solid fa-server" aria-hidden="true"></i>
+                <h3>Backend Development</h3>
             </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>ESP32</span><span>70%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:70%"></div></div>
-            </div>
-            <div class="skill-bar-row">
-                <div class="skill-bar-label"><span>IoT Systems</span><span>70%</span></div>
-                <div class="skill-bar"><div class="skill-bar-fill" style="--level:70%"></div></div>
-            </div>
+            <ul class="skill-tags">
+                <li>Spring Boot</li><li>REST APIs</li><li>MySQL</li><li>JDBC</li>
+            </ul>
         </div>
 
-    </div>
-</section>
-
-
-<!-- INDUSTRIAL TRAINING -->
-<section id="training" class="section reveal">
-    <p class="eyebrow center">Industrial Training</p>
-    <h2 class="section-title">Hands-On Industry Experience</h2>
-
-    <div class="cards-list">
-        <div class="info-card featured">
-            <div class="info-card-icon"><i class="fa-solid fa-industry"></i></div>
-            <div class="info-card-body">
-                <h3>Bharat Heavy Electricals Limited (BHEL), Bhopal</h3>
-                <span class="tag">Industrial Training · Enterprise Systems · Databases</span>
-
-                <p>
-                    Completed industrial training at BHEL, Bhopal, gaining exposure to
-                    large-scale enterprise systems and real-world industrial workflows.
-                </p>
-                <p>
-                    Worked with database-driven applications and data handling processes,
-                    and understood how software systems support manufacturing,
-                    inventory, and operational management in large organizations.
-                </p>
-                <p>
-                    This training strengthened my interest in backend development,
-                    databases, and enterprise-level software solutions.
-                </p>
+        <div class="skill-card">
+            <div class="skill-head">
+                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                <h3>Tools</h3>
             </div>
+            <ul class="skill-tags">
+                <li>Git</li><li>GitHub</li><li>IntelliJ IDEA</li><li>MySQL Workbench</li>
+            </ul>
         </div>
+
+        <div class="skill-card">
+            <div class="skill-head">
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                <h3>IoT &amp; Embedded</h3>
+            </div>
+            <ul class="skill-tags">
+                <li>ESP32</li><li>IoT Systems</li><li>Bluetooth</li>
+            </ul>
+        </div>
+
     </div>
 </section>
 
@@ -308,197 +561,74 @@
     <div class="cards-list cards-grid">
 
         <div class="info-card cert-card">
-            <div class="info-card-icon"><i class="fa-solid fa-certificate"></i></div>
-            <div class="info-card-body">
-                <h3>Java Programming</h3>
-                <span class="tag">Sheryians Coding School</span>
-                <p>
-                    Completed a comprehensive Java programming certification covering
-                    core Java concepts, object-oriented programming, and problem-solving
-                    techniques with hands-on practice.
-                </p>
-                <!-- BUTTON
-                <a href="certificates/java-cert.pdf" target="_blank" class="btn btn-outline btn-sm">View Certificate</a>
-                -->
-            </div>
-        </div>
-
-        <div class="info-card cert-card">
-            <div class="info-card-icon"><i class="fa-solid fa-cloud"></i></div>
-            <div class="info-card-body">
-                <h3>Salesforce Developer — Agentblazer Champion Program</h3>
-                <span class="tag">Skill Wallet</span>
-                <p>
-                    Earned Salesforce Developer certification under the Agentblazer
-                    Champion Program, gaining exposure to Salesforce platform basics,
-                    development concepts, and enterprise cloud applications.
-                </p>
-                <!-- BUTTON
-                <a href="certificates/java-cert.pdf" target="_blank" class="btn btn-outline btn-sm">View Certificate</a>
-                -->
-            </div>
-        </div>
-
-        <div class="info-card cert-card">
-            <div class="info-card-icon"><i class="fa-solid fa-chart-simple"></i></div>
+            <div class="info-card-icon"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></div>
             <div class="info-card-body">
                 <h3>Data Analytics using Power BI — Foundation Certification</h3>
                 <span class="tag">Infosys Springboard Internship 7.0</span>
                 <p>Earned under the Infosys Springboard Internship 7.0 program.</p>
-                <!-- BUTTON
-                <a href="certificates/java-cert.pdf" target="_blank" class="btn btn-outline btn-sm">View Certificate</a>
-                -->
+            </div>
+        </div>
+
+        <div class="info-card cert-card">
+            <div class="info-card-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+            <div class="info-card-body">
+                <h3>Java Programming</h3>
+                <span class="tag">Sheryians Coding School</span>
+                <p>Covered core Java, object-oriented programming and problem-solving with hands-on practice.</p>
+            </div>
+        </div>
+
+        <div class="info-card cert-card">
+            <div class="info-card-icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></div>
+            <div class="info-card-body">
+                <h3>Salesforce Developer — Agentblazer Champion Program</h3>
+                <span class="tag">Skill Wallet</span>
+                <p>Covered Salesforce platform basics, development concepts and enterprise cloud applications.</p>
             </div>
         </div>
 
     </div>
 </section>
-
-
-<!-- PROJECTS -->
-<section id="projects" class="section reveal">
-    <p class="eyebrow center">Projects</p>
-    <h2 class="section-title">Selected Work</h2>
-
-    <div class="project-grid">
-
-        <article class="project-card featured">
-            <div class="project-media"><i class="fa-solid fa-cubes"></i></div>
-            <div class="project-body">
-                <h3>A Cube ERP — AI-Based ERP System</h3>
-                <div class="tech-badges">
-                    <span>React</span><span>TypeScript</span><span>Node.js</span><span>Firebase</span><span>Gemini AI</span>
-                </div>
-                <p>
-                    Built a modular AI-powered ERP system to automate HR, Finance,
-                    Inventory, and Project Management operations.
-                </p>
-                <p>
-                    Integrated Google Gemini AI for intelligent automation including
-                    AI-generated job descriptions, offer letters, financial insights,
-                    project plans, and daily business briefings.
-                </p>
-                <p>
-                    Developed secure serverless APIs, real-time dashboards, and
-                    predictive AI features such as restock suggestions, trend analysis,
-                    and task insights to improve business decision-making.
-                </p>
-            </div>
-        </article>
-
-        <article class="project-card">
-            <div class="project-media"><i class="fa-solid fa-shield-halved"></i></div>
-            <div class="project-body">
-                <h3>Financial Fraud Risk Detection Analytics</h3>
-                <div class="tech-badges">
-                    <span>Python</span><span>Machine Learning</span><span>Power BI</span><span>MySQL</span>
-                </div>
-                <p>Built a fraud detection system using Logistic Regression and Power BI to analyze transaction patterns.</p>
-                <p>Achieved ~99.6% accuracy, detecting 164 fraud cases with minimal false positives.</p>
-                <p>Developed a High Risk Rate (~35–45%) to detect suspicious transactions early using behavioral patterns.</p>
-            </div>
-        </article>
-
-        <article class="project-card">
-            <div class="project-media"><i class="fa-solid fa-store"></i></div>
-            <div class="project-body">
-                <h3>Superstore Sales Analysis</h3>
-                <div class="tech-badges">
-                    <span>MySQL</span><span>Power BI</span><span>Excel</span>
-                </div>
-                <p>
-                    Analyzed sales data, performed data cleaning, wrote complex SQL queries,
-                    and created interactive dashboards for business insights.
-                </p>
-            </div>
-        </article>
-
-        <article class="project-card">
-            <div class="project-media"><i class="fa-solid fa-house-chimney"></i></div>
-            <div class="project-body">
-                <h3>Real Estate Data Analytics</h3>
-                <div class="tech-badges">
-                    <span>Python</span><span>Power BI</span><span>Excel</span>
-                </div>
-                <p>
-                    Analyzed real estate housing data to identify factors affecting house prices
-                    such as area, bedrooms, parking, and furnishing status.
-                </p>
-                <p>
-                    Performed data cleaning, KPI calculations, conditional filtering
-                    (area &gt; 2000 sqft), and exploratory data analysis using Python.
-                </p>
-                <p>Built an interactive Power BI dashboard to visualize pricing trends and key insights.</p>
-            </div>
-        </article>
-
-        <article class="project-card">
-            <div class="project-media"><i class="fa-solid fa-robot"></i></div>
-            <div class="project-body">
-                <h3>RoboCar</h3>
-                <div class="tech-badges">
-                    <span>ESP32</span><span>Bluetooth</span><span>IoT</span>
-                </div>
-                <p>
-                    High-speed robotic car controlled via Bluetooth mobile app with
-                    motor driver integration and real-time movement control.
-                </p>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<!-- Gallery
-<section id="gallery" class="gallery-section">
-  <h2 class="section-title">Gallery</h2>
-  <div class="gallery-grid">
-    <div class="gallery-card">
-      <img src="YI.jpeg">
-      <div class="card-body">
-        <h3>Yi Event</h3>
-        <p>Participation in executive council meet</p>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="MUN.jpeg">
-      <div class="card-body">
-        <h3>MUN Achievement</h3>
-        <p>Organizing and recognition</p>
-      </div>
-    </div>
-  </div>
-</section>
--->
 
 
 <!-- CONTACT -->
 <section id="contact" class="section dark reveal">
     <p class="eyebrow center light">Contact</p>
-    <h2 class="section-title light">Let's Build Something</h2>
-    <p class="contact-sub">Open to backend, data, and full-stack opportunities — feel free to reach out.</p>
+    <h2 class="section-title light">Let's Connect</h2>
+    <p class="contact-sub">Open to Data Analyst, Data Engineer and Backend Developer opportunities.</p>
+
+    <div class="contact-actions">
+        <a href="mailto:abhiyadav20004@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email Me
+        </a>
+        <!-- <a href="Abhi_resume.pdf" class="btn btn-light" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+        </a> -->
+    </div>
 
     <div class="contact-card">
         <div class="contact-info">
             <a href="mailto:abhiyadav20004@gmail.com" class="contact-row">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                 <div><span class="label">Email</span><span class="value">abhiyadav20004@gmail.com</span></div>
             </a>
-            <a href="https://www.linkedin.com/in/abhishek-yadav-649b15261" target="_blank" rel="noopener" class="contact-row">
-                <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/abhishek-yadav-649b15261" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 <div><span class="label">LinkedIn</span><span class="value">abhishek-yadav-649b15261</span></div>
             </a>
-            <a href="https://www.github.com/Abhi30yadav2004" target="_blank" rel="noopener" class="contact-row">
-                <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Abhi30yadav2004" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
                 <div><span class="label">GitHub</span><span class="value">Abhi30yadav2004</span></div>
             </a>
-            <a href="https://leetcode.com/u/Abhishek1_yadav30/" target="_blank" rel="noopener" class="contact-row">
-                <i class="fa-solid fa-code"></i>
+            <a href="https://leetcode.com/u/Abhishek1_yadav30/" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
                 <div><span class="label">LeetCode</span><span class="value">Abhishek1_yadav30</span></div>
             </a>
         </div>
     </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -508,25 +638,25 @@
         <ul class="footer-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="footer-socials">
             <a href="mailto:abhiyadav20004@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/abhishek-yadav-649b15261" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.github.com/Abhi30yadav2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://leetcode.com/u/Abhishek1_yadav30/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-yadav-649b15261" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Abhi30yadav2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com/u/Abhishek1_yadav30/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
         </div>
     </div>
     <p class="footer-copy">&copy; <span id="year"></span> Abhishek Yadav. All rights reserved.</p>
 
     <button id="backToTop" class="back-to-top" aria-label="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </button>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
